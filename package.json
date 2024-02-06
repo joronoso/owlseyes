@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "openai": "^4.26.1",
+    "tiktoken": "^1.0.13"
+  },
+  "name": "owlseyes.net",
+  "version": "1.0.0",
+  "description": "Contents of owlseyes.net",
+  "keywords": [
+    "chatbot",
+    "OpenAI",
+    "node"
+  ],
+  "author": "mochuelo"
+}
