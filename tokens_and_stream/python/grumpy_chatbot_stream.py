@@ -1,7 +1,7 @@
 from openai import OpenAI
 import tiktoken
 
-# Without parameters, the API key will be retrieved for environment variable OPENAI_API_KEY.
+# Without parameters, the API key will be retrieved from the environment variable OPENAI_API_KEY.
 # It can also be provided directly using the apiKey parameter, as in the commented line below.
 #client = OpenAI(api_key='api-key',)
 client = OpenAI()
