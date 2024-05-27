@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@google/generative-ai": "^0.3.1",
+    "better-sqlite3": "^10.0.0",
     "openai": "^4.26.1",
     "tiktoken": "^1.0.13"
   },
