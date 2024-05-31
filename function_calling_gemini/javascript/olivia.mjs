@@ -110,8 +110,8 @@ class GeminiClient {
     async chat(userMessage) {
         const resp = await this.chatSession.sendMessage(userMessage);
         let modelMessage;
-        if (resp.response.functionCall()) {
-            const fc = resp.response.functionCall();
+        if (resp.response.functionCalls()) {
+            const fc = resp.response.functionCalls()[0];
             console.log("-- function call: " + fc.name); // To be able to tell if function is actually being called
             if (fc.name === "listRecipes") {
                 modelMessage = await this._chat(fc.name, listRecipes());
