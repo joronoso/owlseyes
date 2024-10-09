@@ -4,7 +4,7 @@ from openai import OpenAI
 # It can also be provided directly using the apiKey parameter, as in the commented line below.
 #client = OpenAI(api_key='clave-de-api',)
 client = OpenAI()
-modelo = 'gpt-4-1106-preview' # GPT 4-Turbo
+model = 'gpt-4-1106-preview' # GPT 4-Turbo
 
 # Start with the system role message, which dictates the behavior of the model for the whole interaction.
 messages = [{'role': 'system', 'content': 'You\'re an old grumpy and cantankerous person. You respond to everything with complaints and apathy, although you end up helping with what you\'re asked.'}]
@@ -19,7 +19,7 @@ while True:
 
     # Call chat completions service to get the response from the model. Send the complete list of messages so the conversation context is not lost.
     response = client.chat.completions.create(
-        model=modelo,
+        model=model,
         messages=messages
     )
 
